@@ -1,5 +1,6 @@
-import PaddingContainer from '../layout/padding-container'
 import Link from 'next/link'
+import PaddingContainer from '../layout/padding-container'
+import ThemeButton from '@/components/ThemeButton'
 
 export default function Navigation() {
   return (
@@ -10,6 +11,7 @@ export default function Navigation() {
             Jan
             <span className='text-teal-500'>Blog</span>
           </Link>
+          <ThemeButton />
         </div>
       </div>
     </PaddingContainer>
