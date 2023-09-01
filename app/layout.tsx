@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from '@/components/navigation/navigation'
-import PaddingContainer from '@/components/layout/padding-container'
 import { Providers } from '@/components/Providers'
 import { ReactNode } from 'react'
 
@@ -17,10 +16,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en' suppressContentEditableWarning>
       <body
-        className={`${inter.className}  bg-white text-black dark:bg-gray-900 dark:selection:bg-gray-900 dark:text-white h-full selection:bg-gray-50`}>
+        className={`${inter.className}  bg-white text-black dark:bg-gray-900 dark:selection:bg-gray-900 dark:text-white h-full selection:bg-gray-50 max-w-7xl mx-auto`}>
         <Providers>
           <Navigation />
-          <PaddingContainer>{children}</PaddingContainer>
+          <main className='py-20'>{children}</main>
         </Providers>
       </body>
     </html>

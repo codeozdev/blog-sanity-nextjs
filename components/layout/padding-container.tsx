@@ -3,7 +3,5 @@ export default function PaddingContainer({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'>{children}</div>
-  )
+  return <div className='max-w-7xlxl mx-auto'>{children}</div>
 }
