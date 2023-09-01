@@ -17,9 +17,9 @@ export default async function Navigation() {
               <li className='hover:underline'>
                 <Link href='/about'>About</Link>
               </li>
-              {/*<li className='hover:underline'>*/}
-              {/*  <Link href='/sign'>Sign In</Link>*/}
-              {/*</li>*/}
+              <li className='hover:underline'>
+                <Link href='/obsidian'>Obsidian</Link>
+              </li>
             </ul>
             <ThemeButton />
           </div>

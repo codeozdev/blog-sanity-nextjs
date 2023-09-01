@@ -13,6 +13,7 @@ export default async function Home() {
           Oguzhan Uguz
         </span>
       </h1>
+
       <p className='mt-3 sm:text-xl dark:text-gray-400 leading-relaxed '>
         Fullstack Developer olmaya calisiyorum bu yolda ögrenmeye devam ediyorum
       </p>
