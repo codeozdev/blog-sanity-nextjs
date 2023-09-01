@@ -17,9 +17,14 @@ export default async function Home() {
       <p className='mt-3 sm:text-xl dark:text-gray-400 leading-relaxed '>
         Fullstack Developer olmaya calisiyorum bu yolda ögrenmeye devam ediyorum
       </p>
-      <h2 className='mt-10 sm:mt-24 font-bold dark:text-gray-300 text-2xl  sm:text-3xl'>
-        Web Geliştirme Araçlarım
-      </h2>
+      <div className='sm:flex sm:items-center sm:justify-between mt-10 sm:mt-24 text-2xl  sm:text-3xl'>
+        <h2 className='font-bold dark:text-gray-300 '>
+          Web Geliştirme Araçlarım
+        </h2>
+        <p className='pr-5 underline text-xs hidden sm:block '>
+          {new Date(projects[0]._createdAt).toISOString().split('T')[0]}
+        </p>
+      </div>
 
       <div className='my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5'>
         {projects.reverse().map((project) => (
