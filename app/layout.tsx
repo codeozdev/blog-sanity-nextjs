@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${inter.className}  bg-white text-black dark:bg-gray-900 dark:selection:bg-gray-900 dark:text-white h-full selection:bg-gray-50 max-w-7xl mx-auto`}>
         <Providers>
           <Navigation />
-          <main className='py-20'>{children}</main>
+          <main>{children}</main>
         </Providers>
       </body>
     </html>

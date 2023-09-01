@@ -13,7 +13,7 @@ export default async function Navigation() {
           <Link
             href='/'
             className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold'>
-            Codeoz
+            codeoz
           </Link>
           <div className='flex items-center gap-4 text-gray-500 font-medium'>
             <div className='space-x-4 text-black dark:text-white'>
