@@ -1,11 +1,8 @@
 import Link from 'next/link'
 import PaddingContainer from '../layout/padding-container'
 import ThemeButton from '@/components/ThemeButton'
-import { getPages } from '@/libs/sanity-utils'
 
 export default async function Navigation() {
-  const pages = await getPages()
-
   return (
     <PaddingContainer>
       <header className='flex justify-between h-16'>
@@ -16,16 +13,14 @@ export default async function Navigation() {
             codeoz
           </Link>
           <div className='flex items-center gap-4 text-gray-500 font-medium'>
-            <div className='space-x-4 text-black dark:text-white'>
-              {pages.reverse().map((page) => (
-                <Link
-                  key={page._id}
-                  href={`/${page.slug}`}
-                  className='hover:underline'>
-                  {page.title}
-                </Link>
-              ))}
-            </div>
+            <ul className='flex items-center gap-4'>
+              <li className='hover:underline'>
+                <Link href='/about'>About</Link>
+              </li>
+              {/*<li className='hover:underline'>*/}
+              {/*  <Link href='/sign'>Sign In</Link>*/}
+              {/*</li>*/}
+            </ul>
             <ThemeButton />
           </div>
         </div>
